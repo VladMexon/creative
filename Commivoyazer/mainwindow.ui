@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>483</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+
+	background-color: rgb(119, 136, 153);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="BtnAdd">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(64, 193, 193);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: beige;
+font: bold 11px;
+min-width: 5em;
+padding: 6px;
+}
+QPushButton:hover {
+background-color:rgb(51, 153, 153);
+border-style: inset;
+}
+QPushButton:pressed {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}
+QPushButton:checked {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Добавление узла</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="BtnAddPath">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(64, 193, 193);
+border-style: outset;
+border-width: 2px;
+border-radius: 11px;
+border-color: beige;
+font: bold 10px;
+min-width: 5em;
+padding: 6px;
+}
+QPushButton:hover {
+background-color:rgb(51, 153, 153);
+border-style: inset;
+}
+QPushButton:pressed {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}
+QPushButton:checked {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Одно направление</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="BtnDel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(64, 193, 193);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: beige;
+font: bold 11px;
+min-width: 5em;
+padding: 6px;
+}
+QPushButton:hover {
+background-color:rgb(51, 153, 153);
+border-style: inset;
+}
+QPushButton:pressed {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}
+QPushButton:checked {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Удаление узла</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="BtnAddPath2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(64, 193, 193);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: beige;
+font: bold 11px;
+min-width: 5em;
+padding: 6px;
+}
+QPushButton:hover {
+background-color:rgb(51, 153, 153);
+border-style: inset;
+}
+QPushButton:pressed {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}
+QPushButton:checked {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Без направления</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QPushButton" name="BtnDo">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(170, 0, 0);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: beige;
+font: bold 14px;
+color: white;
+min-width: 5em;
+padding: 6px;
+}
+QPushButton:hover {
+background-color:rgb(148, 0, 0);
+border-style: inset;
+}
+QPushButton:pressed {
+background-color:rgb(120, 0, 0) ;
+border-style: inset;
+}
+QPushButton:checked {
+background-color: rgb(120, 0, 0);
+border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Решение задачи Коммивояжёра</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="5">
+       <widget class="myGLWidget" name="openGLWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">myGLWidget
+{
+border: 1px solid gray;
+border: 1px solid gray;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>myGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>myglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Value</class>
+ <widget class="QDialog" name="Value">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>172</width>
+    <height>119</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Путь</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-color: rgb(119, 136, 153);
+}</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>151</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Введите длинну пути</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Val"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="BtnOk">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgb(64, 193, 193);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: beige;
+font: bold 11px;
+min-width: 5em;
+padding: 6px;
+}
+QPushButton:hover {
+background-color:rgb(51, 153, 153);
+border-style: inset;
+}
+QPushButton:pressed {
+background-color: rgb(36, 108, 108);
+border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ok!</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
